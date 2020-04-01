@@ -37,13 +37,69 @@
     </nav>
   </div>
 
+  <ul class="side-nav" id="mobile-nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#search">Search</a></li>
+    <li><a href="#popular">Popular Places</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+
+  <!-- Section: Slider -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/image1.jpg" alt=""></img>
+        <div class="caption center-align">
+          <h2>Your Dream Vacation Awaits</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Cupcake ipsum dolor sit amet pie. Tootsie roll liquorice chocolate cake bear claw sesame snaps wafer dragée pastry.
+          </h5>
+          <a href="" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+
+      <li>
+        <img src="img/image2.jpg" alt=""></img>
+        <div class="caption left-align">
+          <h2>We Work with All Budgets</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Cupcake ipsum dolor sit amet pie. Tootsie roll liquorice chocolate cake bear claw sesame snaps wafer dragée pastry.
+          </h5>
+          <a href="" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+
+      <li>
+        <img src="img/image3.jpg" alt=""></img>
+        <div class="caption right-align">
+          <h2>Your Dream Vacation Awaits</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Cupcake ipsum dolor sit amet pie. Tootsie roll liquorice chocolate cake bear claw sesame snaps wafer dragée pastry.
+          </h5>
+          <a href="" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
-      // Custom JS & jQuery here
+      // Init Sid nav
+      $(".button-collapse").sideNav();
 
+      // Init Slider
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      })
     });
   </script>
 </body>
