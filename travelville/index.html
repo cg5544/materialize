@@ -80,10 +80,23 @@
           <a href="" class="btn btn-large">Learn More</a>
         </div>
       </li>
-
     </ul>
   </section>
 
+  <!-- Section: Search -->
+  <section class="section section-search teal darken-1 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Search Destinations</h3>
+          <div class="input-field">
+            <input class="white grey-text autocomplete" placeholder=" Hawaii, Aruba, etc..." type="text" id="autocomplete-input"></input>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -99,6 +112,19 @@
         height: 500,
         transition: 500,
         interval: 6000
+      });
+
+      // Autocomplete
+      $('.autocomplete').autocomplete({
+        data: {
+          "Paris": null,
+          "New York": null,
+          "Maldive": null,
+          "Cancun": null,
+          "Aruba": null,
+          "Hawaii": null,
+          "Beijing": null,
+        }
       })
     });
   </script>
